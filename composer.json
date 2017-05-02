@@ -1,0 +1,15 @@
+{
+    "name": "zhouzhichao/combinator-practice",
+    "authors": [
+        {
+            "name": "zhouzhichao",
+            "email": "2272713550@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "co\\":"src/"            
+        }
+    }
+}
