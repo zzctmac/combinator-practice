@@ -1,20 +1,26 @@
 <?php
+
 namespace co;
 
-class SimpleLogger implements Logger 
+/**
+ * 什么都不做的logger
+ * Class NopLogger
+ * @package co
+ */
+class NopLogger implements Logger 
 {
-   /* function printInfo($level, $msg)
+    public function __construct()
     {
-        echo $msg;
     }
-    */
+
     function println($level, $msg)
     {
-        echo $msg . "\n";
+
     }
+
     function logException(\Exception $e)
     {
-        echo $e->getMessage();
+
     }
 
     function printInfo($level, $msg)
